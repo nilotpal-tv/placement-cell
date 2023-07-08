@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="/css/login.css">
+
+<div id="container">
+
+    <h1>Welcome to <span style="color: rgb(158, 64, 64)"> Placement</span> Cell!</h1>
+
+    <div id="login-container">
+        <h1>Login</h1>
+        <form action="/employee/login/create-session" method="POST">
+            <div class="input">
+                <p>Email</p>
+                <input type="text" name="email" placeholder="Your email" required >
+            </div>
+            <div class="input">
+                <p>Password</p>
+                <input type="password" name="password" placeholder="Your password" required>
+            </div>
+            <div class="actions">
+                <a>Click here to Signup</a>
+                <button>
+                    <span>Login</span>
+                </button>
+            </div>
+        </form>
+    </div>
+    
+    <div id="signup-container">
+        <h1>Signup</h1>
+        <form action="/employee/signup/create" method="POST">
+            <div class="input">
+                <p>Name</p>
+                <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="input">
+                <p>Email</p>
+                <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="input">
+                <p>Password</p>
+                <input type="password" name="password" placeholder="Your password" required>
+            </div>
+            <div class="actions">
+                <button>Signup</button>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+<script src="/js/login.js"></script>
